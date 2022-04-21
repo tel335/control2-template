@@ -8,7 +8,7 @@ exports.getUsers = () => {
     return users
 }
 
-function getFakeUser (id) {
+function getFakeUser(id) {
     return {
         id,
         name: faker.name.findName(),
