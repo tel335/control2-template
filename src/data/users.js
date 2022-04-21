@@ -16,3 +16,5 @@ function getFakeUser (id) {
         bitcoinAddress: faker.finance.bitcoinAddress()
     }
 }
+
+
