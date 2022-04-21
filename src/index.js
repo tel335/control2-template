@@ -3,11 +3,13 @@ import bodyParser from 'koa-body'
 import router from './routes/index'
 
 const app = new koa()
-const port = 3000
+const port = 3006
 
 app.use(bodyParser({ multipart: true, urlencoded: true }))
 app.use(router.routes())
 
-app.listen(3000, () => {
+
+app.listen(3006, () => {
     console.log(`Server is running on port ${port}`)
 })
+
