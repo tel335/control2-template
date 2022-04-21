@@ -1,4 +1,5 @@
 import { faker } from '@faker-js/faker'
+import getUUIDV4 from 'uuid'
 
 exports.getUsers = () => {
     const users = []
@@ -15,4 +16,15 @@ function getFakeUser (id) {
         email: faker.internet.email(),
         bitcoinAddress: faker.finance.bitcoinAddress()
     }
+}
+
+exports.postToken = (key, secret) =>{
+    let obj = {
+        id : getUsers(),
+        secret : secret,
+        key: key,
+        
+    }
+    return obj
+
 }
