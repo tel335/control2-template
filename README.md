@@ -61,8 +61,12 @@ Devuelva el objeto de usuario tal cual como está en el código.
 Piense en las siguientes preguntas:
 
 - ¿Qué códigos de respuesta usaría en ambos casos, para cada caso de uso?
+Para el primer utilice un codigo 200 para decir que se recibio el requerimiento y que se encontro lo que se estaba buscando, un 404 al tener uno de los datos incorrectos, ya sea el id, secret o el key, dado que uno de esos esta incorrecto y no se encontro lo que se buscaba y para el get-users seria aparentemente lo mismo, dado que se busca un usuario a traves de un token utilice el 204 para simbolizar que el requerimiento llego pero no se encontro lo que se buscaba y simplemente un 200 cuando se encontro al usuario.
 - ¿Cómo asociaría un token que generó a un usuario?
+Como es un objeto simplemente al buscar el usuario se le incluiria el token generado
 - ¿Qué verbos http usaría para cada caso?
+Para el primer caso (get-token) usaria un POST dado que hay mucha informacion importante que no puede ser vista por otros y dado que post ofrece una cobertura seria lo apropiado y para el segundo caso (get-user) utilizaria simplemente un get
 - ¿Qué formato de inputs/outputs usaría?
+
 
 **Happy coding!**
