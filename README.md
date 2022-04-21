@@ -60,7 +60,7 @@ Devuelva el objeto de usuario tal cual como está en el código.
 
 Piense en las siguientes preguntas:
 
-- ¿Qué códigos de respuesta usaría en ambos casos, para cada caso de uso?
+- ¿Qué códigos de respuesta usaría en ambos casos, para cada caso de uso? 
 - ¿Cómo asociaría un token que generó a un usuario?
 - ¿Qué verbos http usaría para cada caso?
 - ¿Qué formato de inputs/outputs usaría?
