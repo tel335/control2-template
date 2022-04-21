@@ -1,5 +1,16 @@
 # Control 2 TEL-335
 
+## EJECUCIÓN:
+
+primero de debe ejecutar localhost:3000/api/users para crear los users
+
+Para generar un token he usado postman, en donde se debe hacer un requerimiento GET a la siguiente url de ejemplo:
+
+localhost:3000/api/gettoken?id=100&key=tel335&secret=f68747ae-731f-46f6-92a8-c21180ff7b59
+
+si id, key y secren están bien (dentro del rango) se obtendrá el token de vuelta, si no,
+se imprimirá por consola los valores diciendo que alguno está mal.
+
 ## Instalación
 
 Ejecute los siguientes comandos:
