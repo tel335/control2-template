@@ -11,7 +11,9 @@ exports.getTok = (id, key, secret) => {
             users.forEach(user => {
                 if (id == user.id){
                     token = tokens.getUUIDV4();
-                    
+                    //lo que haria para enlaazar el token al usuario seria crear un arreglo de dos dimensiones en donde cada elemento tenga un id y el token correspondiente
+                    //Esto permitiria tener un metodo de busqueda de usuarios con el token (como un hash)
+                    //No me quedo tiempo para hacerlo pero esa es mi idea
                 }
             });
         }
