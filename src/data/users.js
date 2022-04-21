@@ -16,3 +16,20 @@ function getFakeUser (id) {
         bitcoinAddress: faker.finance.bitcoinAddress()
     }
 }
+
+function searchUser (search) {
+    const object = {
+        searchUser : search.id
+    }
+    
+    let response = []
+    let user = this.getUsers()
+
+    user.forEach((element) => {
+        if(element.id == object.searchUser){
+            response.push(element)
+        }
+    })
+
+    return response
+}
